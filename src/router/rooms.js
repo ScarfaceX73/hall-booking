@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 const roomsModule = require("../modules/rooms");
 
-router.get("/get", jobModule.roomInfo);
+router.get("/get", roomsModule.roomInfo);
 
-router.post("/add", jobModule.newRoom);
+router.post("/add", roomsModule.newRoom);
 
-router.put("/update/:roomId", jobModule.isBooked);
+router.put("/update/:roomId", roomsModule.isBooked);
 
 module.exports = router;
